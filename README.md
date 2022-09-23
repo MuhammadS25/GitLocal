@@ -95,7 +95,7 @@ Using **--all** instead of individual filenames will **stage** all changes (new,
 
 ## Git Commit
 
-Since we have finished our work, we are ready move from **stage** to **commit** for our repo.
+Since we have finished our work, we are ready to move from **stage** to **commit** for our repo.
 
 * Adding commits keep track of our progress and changes as we work. Git considers each commit change point or "save point".
 * When we commit, we should always include a message.
@@ -108,6 +108,16 @@ The **commit** command performs a commit, and the **-m "message"** adds a messag
 
 
 ![Terminal Example](Commit-m.png)
+
+## Git Commit with Stage
+
+```Bash
+git commit -am "A brief message"
+```
+
+>The **-am** allows us to add and message at the same time.
+
+
 
 ## Git Commit without Stage
 
@@ -148,6 +158,7 @@ git log --oneline
 git diff #commit1hash #commit2hash
 ```
 >Note: change the order of the commits affects the result as it displays the changes from **commit1** and **commit2**.
+
 ![Terminal Example](diff.png)
 
 ---
@@ -162,7 +173,7 @@ Using **Branches** allows you:
 
 * Working on a new version without impacting the live version
 * Creating a new branch to fix small errors then merge it to the live version.
-* divide the work between more than one person working on independant units.
+* divide the work between more than one person working on independent units.
 * You can switch between different **Branches** and work on them without impacting eachother.
 
 ### Craeting New Branch
@@ -188,7 +199,7 @@ git switch NewBranch
 
 ![Terminal Example](checkout.png)
 
-that command switch us to **NewBranch**.
+that command switches us to **NewBranch**.
 
 ```Bash
 git checkout -b MyNewBranch
@@ -197,7 +208,7 @@ Using **-b** on **checkout** will create a new **branch** if it doesn't exit the
 
 ## Merge Branches
 
-First we need to navigate to **master branch** 
+First we need to navigate to our destination branch which will have the merged version and it's usually the **master branch** 
 
 then we **merge** the master branch with NewBranch
 
@@ -216,7 +227,7 @@ git branch -d Newbranch
 
 ## Merge Conflicts
 
-Merge Conflict happens when there's two versions of the same file in the master and the other branch to fix the conflict we edit the file with the conflict then we run **git commit** that will conclude the **merge**.
+>Merge Conflict happens when there's two versions of the same file in the master and the other branch due to **commits on the destination branch** to fix the conflict we edit the file with the conflict **in the destination branch** then we run **git commit** that will conclude the **merge**.
 
 ---
 ---
@@ -248,7 +259,7 @@ To **revert** to an earlier commit, use **HEAD~x** where **x** refers (**Number 
 ```Bash
 git revert HAED~2 --no-edit
 ```
-It will make the 2nd previous commit the new one.
+It will make the 3rd previous commit the new one.
 
 ![rev2](img_revert_part2.gif)
 
@@ -272,14 +283,14 @@ git reset 9a9add8
 
 ## Git Undo Reset
 
->Even if the following commits are no longer displayed in the log but it still exist.
+>Even if the following commits are no longer displayed in the log but they still exist.
 
 >Store the **commithash** before applying the reset so you can get back to any commit.
 
 ```Bash
 git reset e56ba1f
 ```
->So **reset** could be used to go bachward or forward.
+>So **reset** could be used to go backward or forward.
 
 ---
 ---
