@@ -340,4 +340,12 @@ or through
 
 [Git Online man Page](https://git-scm.com/docs/git "Git Documentation")
 
+---
+---
+## Resources
 
+### [**w3schools**](https://www.w3schools.com/git/)
+
+### [**Programming with Mosh**](https://www.youtube.com/watch?v=8JJ101D3knE)
+
+### [**Missing Semester**](https://www.youtube.com/watch?v=2sjqTHE0zok&t=40s)
