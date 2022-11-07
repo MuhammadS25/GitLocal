@@ -1,6 +1,6 @@
 <!--Intro-->
 # Introduction
-![Git/GitHub](2.png)
+![Git/GitHub](pics/2.png)
 ## What is Git?
 Git is a popular version control system. It was created by Linus Torvalds in 2005, and has been maintained by Junio Hamano since then.
 
@@ -19,7 +19,7 @@ It is used for:
 * You can revert back to any previous commit.
 * Git does not store a separate copy of every file in every commit, but keeps track of changes made in each commit!
 ## Why Git?
-![Example](1.png)
+![Example](pics/1.png)
 * Over 70% of developers use Git!
 * Developers can work together from anywhere in the world.
 * Developers can see the full history of the project.
@@ -53,7 +53,7 @@ sudo apt install git
 ```Bash
 git --version
 ```
-![Terminal](4.png)
+![Terminal](pics/4.png)
 
 ## Configure Git
 > Use **global** to set the username and e-mail for every repository on your computer.
@@ -75,7 +75,7 @@ To check for any changes in the tracked directory
 ```Bash
 git status
 ```
-![Terminal Example](5.png)
+![Terminal Example](pics/5.png)
 
 ---
 ---
@@ -107,7 +107,7 @@ git commit -m "A brief message"
 The **commit** command performs a commit, and the **-m "message"** adds a message.
 
 
-![Terminal Example](Commit-m.png)
+![Terminal Example](pics/Commit-m.png)
 
 ## Git Commit with Stage
 
@@ -140,13 +140,13 @@ allows us to view the history of commits for a repository.
 git log
 ```
 
-![Terminal Example](6.png)
+![Terminal Example](pics/6.png)
 
 To avoid the very long log list, it's better to use **--oneline** displaying every commit with it's **hash** and **message**.
 ```Bash
 git log --oneline
 ```
-![Terminal Example](oneline.png)
+![Terminal Example](pics/oneline.png)
 
 ---
 ---
@@ -159,7 +159,7 @@ git diff #commit1hash #commit2hash
 ```
 >Note: change the order of the commits affects the result as it displays the changes from **commit1** and **commit2**.
 
-![Terminal Example](diff.png)
+![Terminal Example](pics/diff.png)
 
 ---
 ---
@@ -197,7 +197,7 @@ git checkout NewBranch  #Old Command
 git switch NewBranch
 ```
 
-![Terminal Example](checkout.png)
+![Terminal Example](pics/checkout.png)
 
 that command switches us to **NewBranch**.
 
@@ -223,7 +223,7 @@ since we finished the work on **NewBranch** we can delete it.
 git branch -d Newbranch
 ```
 
-![Terminal Example](deletingBranch.png)
+![Terminal Example](pics/deletingBranch.png)
 
 ## Merge Conflicts
 
@@ -242,7 +242,7 @@ This Command is used when we want to take a previous commit as a new commit.
 
 1. Make it the new commit.
 
-![rev1](img_revert_part1.gif)
+![rev1](pics/img_revert_part1.gif)
 
 ```Bash
 git log --oneline
@@ -261,7 +261,7 @@ git revert HAED~2 --no-edit
 ```
 It will make the 3rd previous commit the new one.
 
-![rev2](img_revert_part2.gif)
+![rev2](pics/img_revert_part2.gif)
 
 ---
 ---
@@ -318,13 +318,13 @@ git commit --amend -m "New message"
 ```Bash
 nano .gitignore
 ```
-![ignore rules](ignorerules.jpg)
+![ignore rules](pics/ignorerules.jpg)
 
 ---
 ---
 ## Finally a Cheat Sheet with Extra Information
 
-![Cheat Sheet](cheatSheet.png)
+![Cheat Sheet](pics/cheatSheet.png)
 
 ---
 ---
