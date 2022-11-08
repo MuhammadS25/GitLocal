@@ -180,12 +180,15 @@ git commit -m "A brief message"
 
 The **commit** command performs a commit, and the **-m "message"** adds a message.
 
+**Note**: to use -am you must check the status first.
+
 
 ![Terminal Example](pics/Commit-m.png)
 
 ## Git Commit with Stage
 
 ```Bash
+git status
 git commit -am "A brief message"
 ```
 
