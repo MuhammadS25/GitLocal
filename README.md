@@ -96,7 +96,76 @@ Using **--all** instead of individual filenames will **stage** all changes (new,
 ---
 ---
 
+## Git Stash
 
+Temporarily shelves changes you've made to your working copy so you can work on something else, and then come back and re-apply them later.
+
+![stash](pics/hero.svg)
+
+* Stashing Unstaging changes.
+
+```Bash
+git stash -u
+```
+![terminal example](pics/Screenshot%20from%202022-11-08%2023-33-18.png)
+
+* Stashing Staged changes.
+
+```Bash
+git stash
+```
+![terminal example](pics/Screenshot%20from%202022-11-08%2023-27-42.png)
+
+* Bringing back Stashed work.
+
+```Bash
+git stash pop
+```
+Popping your stash removes the changes from your stash and reapplies them to your working copy.
+
+* Alternatively, you can reapply the changes to your working copy and keep them in your stash.
+
+```Bash
+git stash apply
+```
+* Manging multiple Stashes.
+
+```Bash
+git stash list
+```
+
+* Adding a message to the stash.
+
+```Bash
+git stash save "A brief message"
+```
+
+* Popping a specific Stash form Stash list.
+
+```Bash
+git stash pop stash@{index}
+```
+
+![terminal example](pics/Screenshot%20from%202022-11-08%2023-58-32.png)
+
+* Dropping a specific Stash.
+
+```Bash
+git stash drop stash@{index}
+```
+
+![terminal example](pics/Screenshot%20from%202022-11-09%2000-00-05.png)
+
+* To clear your Stash
+
+```Bash
+git stash clear
+```
+
+![terminal example](pics/Screenshot%20from%202022-11-08%2023-29-13.png)
+
+---
+---
 
 ## Git Commit
 
