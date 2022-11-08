@@ -93,6 +93,11 @@ git add .
 ```
 Using **--all** instead of individual filenames will **stage** all changes (new, modified, and deleted) files.
 
+---
+---
+
+
+
 ## Git Commit
 
 Since we have finished our work, we are ready to move from **stage** to **commit** for our repo.
