@@ -102,7 +102,7 @@ Temporarily shelves changes you've made to your working copy so you can work on 
 
 ![stash](pics/hero.svg)
 
-* Stashing Unstaging changes.
+* Stashing Unstaged changes.
 
 ```Bash
 git stash -u
