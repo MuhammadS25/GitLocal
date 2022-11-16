@@ -31,7 +31,7 @@ It is used for:
 ---
 ## GitHub
 * the largest host of source code in the world, and has been owned by Microsoft since 2018.
-* It's not the same as Git but it uses Git
+* It's not the same as Git but it uses Git.
 ---
 ---
 # Installation
@@ -42,7 +42,7 @@ sudo apt update
 sudo apt install git
 ```
 ### Windows
-[Git](https://git-scm.com/)
+[Download Git](https://git-scm.com/)
 
 ## GitHub Desktop
 [Linux](https://gist.github.com/berkorbay/6feda478a00b0432d13f1fc0a50467f1)
@@ -70,7 +70,7 @@ cd GP
 git init
 ```
 ## Git status
-To check for any changes in the tracked directory
+To check for any changes in the tracked directory.
 
 ```Bash
 git status
@@ -81,11 +81,19 @@ git status
 ---
 
 ## Git Staging Environment
-* adding single file
+* adding single file.
 ```Bash
 git add script.py
 ```
-* adding more than one file
+* Adding more than one file using regex.
+
+```Bash
+git add *.png
+```
+> The previous command will add all unstaged pictures with png extension in the current directory.
+
+* Adding all changes.
+
 ```Bash
 git add --all
 git add -A
@@ -156,7 +164,7 @@ git stash drop stash@{index}
 
 ![terminal example](pics/Screenshot%20from%202022-11-09%2000-00-05.png)
 
-* To clear your Stash
+* To clear your Stash.
 
 ```Bash
 git stash clear
@@ -212,7 +220,7 @@ git status --short
 
 ## Git Commit Log
 
-allows us to view the history of commits for a repository.
+Allows us to view the history of commits for a repository.
 ```Bash
 git log
 ```
@@ -276,7 +284,7 @@ git switch NewBranch
 
 ![Terminal Example](pics/checkout.png)
 
-that command switches us to **NewBranch**.
+That command switches us to **NewBranch**.
 
 ```Bash
 git checkout -b MyNewBranch
@@ -285,16 +293,16 @@ Using **-b** on **checkout** will create a new **branch** if it doesn't exit the
 
 ## Merge Branches
 
-First we need to navigate to our destination branch which will have the merged version and it's usually the **master branch** 
+First we need to navigate to our destination branch which will have the merged version and it's usually the **master branch** .
 
-then we **merge** the master branch with NewBranch
+Then we **merge** the master branch with NewBranch.
 
 ```Bash
 git checkout master
 git merge NewBranch
 ```
 
-since we finished the work on **NewBranch** we can delete it.
+Since we finished the work on **NewBranch** we can delete it.
 
 ```Bash
 git branch -d Newbranch
@@ -324,14 +332,14 @@ This Command is used when we want to take a previous commit as a new commit.
 ```Bash
 git log --oneline
 ```
-if it's the previous commit
+If it's the previous commit
 
 ```Bash
 git revert  HEAD --no-edit
 ```
 Adding **--no-edit** to replace the commit message with default revert message.
 
-To **revert** to an earlier commit, use **HEAD~x** where **x** refers (**Number of steps -1**)
+To **revert** to an earlier commit, use **HEAD~x** where **x** refers (**Number of steps -1**).
 
 ```Bash
 git revert HAED~2 --no-edit
@@ -413,7 +421,7 @@ To see all possible commands.
 git help --all
 ```
 
-or through
+Or through
 
 [Git Online man Page](https://git-scm.com/docs/git "Git Documentation")
 
