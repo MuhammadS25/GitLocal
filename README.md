@@ -183,10 +183,16 @@ Since we have finished our work, we are ready to move from **stage** to **commit
 * When we commit, we should always include a message.
 
 ```Bash
-git commit -m "A brief message"
+git commit -m "A brief Message"
 ```
 
 The **commit** command performs a commit, and the **-m "message"** adds a message.
+
+* Adding **Description** with the Commit Message.
+
+```Bash
+git commit -m "A brief Message" -m "Description ........"
+```
 
 **Note**: to use -am you must check the status first.
 
