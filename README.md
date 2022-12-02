@@ -180,7 +180,7 @@ git stash clear
 Since we have finished our work, we are ready to move from **stage** to **commit** for our repo.
 
 * Adding commits keep track of our progress and changes as we work. Git considers each commit change point or "save point".
-* When we commit, we should always include a message.
+* When we commit, we must include a message **(Mandatory)**.
 
 ```Bash
 git commit -m "A brief Message"
@@ -205,7 +205,7 @@ git commit -am "A brief message"
 
 >The **-am** allows us to add and message at the same time.
 
-**Note**: to use -am you must check the status first.
+**Note**: to use -am you must check the status first and it's working with already added files not new created ones.
 
 ## Git Commit without Stage
 
